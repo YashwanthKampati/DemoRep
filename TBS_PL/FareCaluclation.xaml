@@ -1,0 +1,23 @@
+﻿<Window x:Class="TBS_PL.FareCaluclation"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TBS_PL"
+        mc:Ignorable="d"
+        Title="FareCaluclation" Height="450" Width="800">
+    <Grid RenderTransformOrigin="0.505,0.561">
+        <TextBox x:Name="txt_calculation" HorizontalAlignment="Left" Height="28" Margin="569,272,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Estimated Fare" HorizontalAlignment="Left" Margin="569,212,0,0" VerticalAlignment="Top"/>
+        <Label Content="Start Date" HorizontalAlignment="Left" Margin="239,53,0,0" VerticalAlignment="Top"/>
+        <Label Content="End Date" HorizontalAlignment="Left" Margin="239,108,0,0" VerticalAlignment="Top"/>
+        <Label Content="Start Time(hh:mm)" HorizontalAlignment="Left" Margin="239,163,0,0" VerticalAlignment="Top"/>
+        <Label Content="End Time(hh:mm)" HorizontalAlignment="Left" Margin="239,212,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txt_stime" HorizontalAlignment="Left" Height="23" Margin="388,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_etime" HorizontalAlignment="Left" Height="23" Margin="388,215,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dp_StartDate" HorizontalAlignment="Left" Margin="388,53,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.647,0.458"/>
+        <DatePicker x:Name="dp_EndDate" HorizontalAlignment="Left" Margin="388,108,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btn_cal" Content="Calculate Fare" HorizontalAlignment="Left" Margin="388,272,0,0" VerticalAlignment="Top" Width="102" Click="Btn_cal_Click" Height="28"/>
+
+    </Grid>
+</Window>

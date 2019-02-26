@@ -1,0 +1,33 @@
+﻿<Window x:Class="TBS_PL.BookingHome"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TBS_PL"
+        mc:Ignorable="d"
+        Title="BookingHome" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="TaxiID" HorizontalAlignment="Left" Margin="43,42,0,0" VerticalAlignment="Top"/>
+        <Label Content="BookingDate" HorizontalAlignment="Left" Margin="43,73,0,0" VerticalAlignment="Top"/>
+        <Label Content="TripDate" HorizontalAlignment="Left" Margin="43,104,0,0" VerticalAlignment="Top"/>
+        <Label Content="StartTime" HorizontalAlignment="Left" Margin="43,135,0,0" VerticalAlignment="Top"/>
+        <Label Content="EndTime" HorizontalAlignment="Left" Margin="43,166,0,0" VerticalAlignment="Top"/>
+        <Label Content="SourceAddress" HorizontalAlignment="Left" Margin="43,197,0,0" VerticalAlignment="Top"/>
+        <Label Content="DestinationAddress" HorizontalAlignment="Left" Margin="43,223,0,0" VerticalAlignment="Top"/>
+
+        <TextBox x:Name="txt_TaxiID" HorizontalAlignment="Left" Height="23" Margin="153,45,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSHrs" HorizontalAlignment="Left" Height="23" Margin="153,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28"/>
+        <TextBox x:Name="txtEhrs" HorizontalAlignment="Left" Height="23" Margin="153,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28"/>
+        <TextBox x:Name="txtDAddress" HorizontalAlignment="Left" Height="23" Margin="153,228,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txtSAddress" HorizontalAlignment="Left" Height="23" Margin="153,200,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btn_Book" Content="Book Taxi" HorizontalAlignment="Left" Margin="43,275,0,0" VerticalAlignment="Top" Width="75" Click="Btn_Book_Click"/>
+        <Button x:Name="btn_cancelBook" Content="Cancel" HorizontalAlignment="Left" Margin="153,275,0,0" VerticalAlignment="Top" Width="75" Height="20" Click="Btn_cancelBook_Click"/>
+        <DatePicker x:Name="dpTripDate" HorizontalAlignment="Left" Margin="153,106,0,0" VerticalAlignment="Top" Width="120"/>
+        <DatePicker x:Name="dpBookingDate" HorizontalAlignment="Left" Margin="153,75,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="186,135,0,0" VerticalAlignment="Top"/>
+        <Label Content=":" HorizontalAlignment="Left" Margin="186,166,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtSMins" HorizontalAlignment="Left" Height="23" Margin="204,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28"/>
+        <TextBox x:Name="txtEMins" HorizontalAlignment="Left" Height="23" Margin="204,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="28"/>
+        <DataGrid x:Name="dgTaxi" HorizontalAlignment="Left" Height="204" Margin="329,45,0,0" VerticalAlignment="Top" Width="421"/>
+    </Grid>
+</Window>
