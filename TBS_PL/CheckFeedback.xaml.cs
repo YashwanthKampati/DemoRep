@@ -53,10 +53,6 @@ namespace TBS_PL
             {
                 MessageBox.Show(fe.Message);
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
     }
 }
